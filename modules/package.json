@@ -6,6 +6,7 @@
     ],
     "devDependencies": {
         "grunt": "^1.0.3",
+        "grunt-tslint": "^5.0.2",
         "grunt-typescript": "^0.8.0"
     }
 }

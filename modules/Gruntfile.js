@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-typescript');
+    grunt.loadNpmTasks("grunt-tslint");
 
     grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -15,8 +16,16 @@ module.exports = function(grunt) {
             declaration: true
           }
         }
+    },
+    tslint: {
+        options: {
+            configuration: "tslint.json"
+        },
+        all: {
+            src: ["./**/src/*.ts"]
+        }
     }
   });
 
-  grunt.registerTask('default', ['typescript']);
+  grunt.registerTask('default', ['tslint:all', 'typescript']);
 };
