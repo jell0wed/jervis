@@ -1,0 +1,11 @@
+{
+    "private": true,
+    "workspaces": [
+        "jervis-common",
+        "jervis-interfaces"
+    ],
+    "devDependencies": {
+        "grunt": "^1.0.3",
+        "grunt-typescript": "^0.8.0"
+    }
+}
