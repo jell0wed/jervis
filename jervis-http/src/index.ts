@@ -1,0 +1,1 @@
+import { BaseJervisCommand } from "jervis-common";

@@ -1,5 +1,10 @@
 {
   "main": "dist/index.js",
+  "private": true,
+  "workspaces": [
+      "modules/*",
+      "jervis-http"
+  ],
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "build": "tsc",

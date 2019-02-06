@@ -2,5 +2,9 @@
   "name": "jervis-http",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "jervis-common": "1.0.0"
+  }
 }
